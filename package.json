@@ -6,7 +6,7 @@
   "author": "sujith gopinath",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve --config 'webpack.config.dev.js' --open 'chrome'",
+    "dev": "webpack serve --config 'webpack.config.dev.js'  --progress",
     "test": "jest --watchAll --detectOpenHandles"
   },
   "dependencies": {

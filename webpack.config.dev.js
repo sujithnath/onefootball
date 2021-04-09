@@ -8,6 +8,8 @@ module.exports = {
     index: path.resolve(__dirname, "src", "index.js"),
   },
   devServer: {
+    open: "chrome",
+    port: 3000,
     hot: true,
     watchContentBase: true,
     progress: true,
@@ -68,7 +70,4 @@ module.exports = {
     }),
   ],
   devtool: "eval-source-map",
-  performance: {
-    hints: "warning",
-  },
 };
