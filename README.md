@@ -18,7 +18,8 @@ search the players by id.
   the APP remains clean
 - I have note used either Redux or context since there were no deep level
   nesting with sharing state.
-- Deployed in verce
+- Utilized react Hooks, mainly hook reducer to combine the common actions related with search component
+- Deployed in Vercel
 
 
 ## Things I could have done
