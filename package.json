@@ -1,0 +1,52 @@
+{
+  "name": "one-football-challenge",
+  "version": "1.0.0",
+  "description": "coding challenge from oneFootball",
+  "main": "index.js",
+  "author": "sujith gopinath",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --config 'webpack.config.dev.js' --open 'chrome'",
+    "test": "jest --watchAll --detectOpenHandles"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/react-hooks": "^5.1.1",
+    "@testing-library/user-event": "^13.1.1",
+    "axios": "^0.21.1",
+    "firebase": "^8.3.1",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
+    "styled-components": "^5.2.1",
+    "svg-url-loader": "^7.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^5.2.0",
+    "dotenv-webpack": "^7.0.2",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "msw": "^0.28.1",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "styled-reset": "^4.3.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "worker-loader": "^3.0.8"
+  }
+}
