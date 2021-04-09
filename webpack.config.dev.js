@@ -1,5 +1,4 @@
 const path = require("path");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const Dotenv = require("dotenv-webpack");
 
@@ -56,18 +55,10 @@ module.exports = {
     extensions: [".js", ".jsx"],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
-    new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
-      filename: "./index.html",
-      favicon: false,
-      showErrors: true,
-      cache: true,
-    }),
     new webpack.HotModuleReplacementPlugin(),
-    new Dotenv({
-      path: "./.env.development",
-    }),
+    // new Dotenv({
+    //   path: "./.env.development",
+    // }),
   ],
   devtool: "eval-source-map",
 };

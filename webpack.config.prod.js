@@ -2,6 +2,7 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const Dotenv = require("dotenv-webpack");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -52,7 +53,7 @@ module.exports = {
     extensions: [".js", ".jsx"],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
       filename: "./index.html",
@@ -60,10 +61,9 @@ module.exports = {
       showErrors: true,
       cache: true,
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new Dotenv({
-      path: "./.env.development",
-    }),
+    // new Dotenv({
+    //   path: "./.env.development",
+    // }),
   ],
   devtool: "eval-source-map",
   performance: {

@@ -56,6 +56,10 @@ const SearchPlayer = ({ setPlayerDetails }) => {
         const profileResult = await fetchPlayerProfile(result["profile-id"]);
         setPlayerId("");
         setPlayerDetails({ ...profileResult, ...result });
+        dispatch({
+          type: "LOADING",
+          loading: false,
+        });
       } else {
         setPlayerDetails(null);
         dispatch({
